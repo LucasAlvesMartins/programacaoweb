@@ -1,4 +1,92 @@
 <!DOCTYPE html>
 <html>
-
+    
+    <head>
+        <title>Meu título</title>
+        <meta charset="utf-8">
+    </head>
+    
+    <body>
+        <form method="post" action="cadastrar.php">
+            
+            <table>
+                <tr>
+                    <td>
+                        <label for="nome">Nome: </label>
+                    </td> 
+                    <td>
+                        <input type="text" name="nome">
+                    </td>                    
+                </tr>
+                <tr>
+                    <td>
+                        <label for="endereco">Endereço: </label>
+                    </td>    
+                    <td>
+                        <input type="text" name="endereco">
+                    </td> 
+                </tr>
+                <tr>
+                    
+                    <td>
+                        <label for="estado">Estado: </label>
+                    </td> 
+                    
+                    <td>
+                        <select name="estado">
+                            <option name="pb">Paraiba</option>
+                            <option name="pe">Pernambuco</option>
+                            <option name="rn">Rio Grande do Norte</option>
+                        </select>
+                    </td>       
+                </tr>
+                <tr>
+                    <td>
+                        <label for="genero">Sexo: </label>
+                    </td>
+                    
+                    <td>
+                        <input type="radio" name="genero" value="masc">Masculino
+                    </td>
+                    
+                    <td>
+                        <input type="radio" name="genero" value="fem">Feminino
+                    </td> 
+                </tr>
+                
+                <tr>
+                    <td>
+                        <label for="materias">Matérias Preferidas: </label>
+                    </td>
+                    <td>
+                        <input type="checkbox" name="materias" value="portugues"> Português-
+                    </td>
+                    <td>
+                        <input type="checkbox" name="materias" value="java">Java-
+                    </td>
+                    <td>
+                        <input type="checkbox" name="materias" value="matematica">Matemática-
+                    </td>
+                    <td>
+                        <input type="checkbox" name="materias" value="php">PHP- 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="resumo">Resumo das Habilidades: </label>
+                    </td>
+                    <td>
+                        <textarea name="resumo" rows="5" cols="20">
+                        </textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Enviar">
+                    </td>
+                </tr>
+                
+            </table>
+        </form>
+    </body>
 </html>
